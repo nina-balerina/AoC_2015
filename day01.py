@@ -30,4 +30,5 @@ for char in txt:
     if floor < 0:
         break
     
-print("party 2: %s" % floor) #1797
+print("party 2: %s" % counter) #1797
+print("---%s seconds---" % (time.time()-start_time))
