@@ -14,8 +14,7 @@ for char in txt:
     if char == '(':
         floor += 1
     elif char == ')':
-        floor -= 1
-        
+        floor -= 1 
         
 print("party 1: %s" % floor) #280
 
