@@ -10,10 +10,10 @@ f = open('day03.txt', 'r')
 txt = f.read()
 
 def change_position(x,y,direction):
-    if character == '>': x += 1
-    elif character == '^': y += 1
-    elif character == '<': x -= 1
-    elif character == 'v': y -= 1
+    if direction == '>': x += 1
+    elif direction == '^': y += 1
+    elif direction == '<': x -= 1
+    elif direction == 'v': y -= 1
     return[x,y]
     
 
