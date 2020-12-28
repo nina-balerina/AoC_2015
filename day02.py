@@ -4,7 +4,6 @@
 """
 
 import time
-import numpy
 start_time = time.time()
 
 f = open('day02.txt', 'r')
@@ -27,7 +26,7 @@ print(f"party 1: {total_paper_area}") #1598415
 
 total_ribbon_length = 0
 for box in box_dimensions:
-    ribbon_per_box = 2*(box[0]+box[1]) + numpy.prod(box)
+    ribbon_per_box = 2*(box[0]+box[1]) + box[0]*box[1]*box[2]
     total_ribbon_length += ribbon_per_box
     
 print(f"party 2: {total_ribbon_length}") #3812909
